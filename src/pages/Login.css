@@ -1,0 +1,169 @@
+.login-page {
+    min-height: calc(100vh - 140px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--gray-100) 0%, var(--gray-50) 100%);
+    padding: var(--spacing-xl);
+}
+
+.login-container {
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+}
+
+.login-card {
+    background: var(--tedx-white);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-xl);
+    overflow: hidden;
+}
+
+.login-header {
+    text-align: center;
+    padding: var(--spacing-2xl) var(--spacing-xl) var(--spacing-lg);
+    background: linear-gradient(135deg, var(--tedx-black) 0%, #2d2d2d 100%);
+    color: var(--tedx-white);
+}
+
+.login-logo {
+    font-family: var(--font-display);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-md);
+}
+
+.login-logo .brand-ted {
+    color: var(--tedx-white);
+}
+
+.login-logo .brand-x {
+    color: var(--tedx-red);
+}
+
+.login-header h1 {
+    color: var(--tedx-white);
+    font-size: 1.75rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.login-header p {
+    color: var(--gray-400);
+    margin: 0;
+}
+
+.login-body {
+    padding: var(--spacing-2xl);
+}
+
+.google-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.login-divider {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin: var(--spacing-xl) 0;
+}
+
+.login-divider::before,
+.login-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--gray-200);
+}
+
+.login-divider span {
+    color: var(--gray-400);
+    font-size: 0.875rem;
+}
+
+.login-info {
+    background: var(--gray-50);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-md);
+}
+
+.login-info p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--gray-600);
+}
+
+.login-info p+p {
+    margin-top: var(--spacing-md);
+    padding-top: var(--spacing-md);
+    border-top: 1px solid var(--gray-200);
+}
+
+.login-info strong {
+    color: var(--gray-800);
+}
+
+.login-footer {
+    padding: var(--spacing-md) var(--spacing-xl) var(--spacing-xl);
+    text-align: center;
+}
+
+.login-footer p {
+    font-size: 0.75rem;
+    color: var(--gray-500);
+    margin: 0;
+}
+
+/* Decoration */
+.login-decoration {
+    position: absolute;
+    top: 50%;
+    left: -100px;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+.decoration-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: var(--tedx-red);
+    opacity: 0.1;
+    position: absolute;
+}
+
+.decoration-circle:nth-child(1) {
+    top: -100px;
+    left: 0;
+}
+
+.decoration-circle:nth-child(2) {
+    top: 50px;
+    left: -50px;
+    width: 150px;
+    height: 150px;
+}
+
+.decoration-circle:nth-child(3) {
+    top: 150px;
+    left: 30px;
+    width: 100px;
+    height: 100px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .login-page {
+        padding: var(--spacing-md);
+    }
+
+    .login-header {
+        padding: var(--spacing-xl) var(--spacing-md) var(--spacing-md);
+    }
+
+    .login-body,
+    .login-footer {
+        padding: var(--spacing-lg);
+    }
+}

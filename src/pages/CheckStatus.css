@@ -1,0 +1,276 @@
+.status-page {
+    padding: var(--spacing-2xl) 0 var(--spacing-3xl);
+    min-height: calc(100vh - 200px);
+}
+
+.status-header {
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+}
+
+.status-header h1 {
+    margin-bottom: var(--spacing-sm);
+}
+
+.status-header p {
+    color: var(--gray-600);
+}
+
+.status-card {
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--tedx-white);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+    padding: var(--spacing-2xl);
+}
+
+.status-card.loading {
+    text-align: center;
+    padding: var(--spacing-3xl);
+}
+
+.status-card.loading .spinner {
+    margin: 0 auto var(--spacing-lg);
+}
+
+.status-card.loading p {
+    color: var(--gray-600);
+}
+
+/* Error Card */
+.error-card {
+    text-align: center;
+}
+
+.error-icon {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.error-card h2 {
+    margin-bottom: var(--spacing-sm);
+}
+
+.error-card p {
+    color: var(--gray-600);
+    margin-bottom: var(--spacing-xl);
+}
+
+/* Not Found Card */
+.not-found {
+    text-align: center;
+}
+
+.not-found-icon {
+    font-size: 4rem;
+    margin-bottom: var(--spacing-lg);
+}
+
+.not-found h2 {
+    margin-bottom: var(--spacing-md);
+}
+
+.not-found p {
+    color: var(--gray-600);
+    margin-bottom: var(--spacing-sm);
+}
+
+.not-found .hint {
+    font-size: 0.9rem;
+    color: var(--gray-500);
+    margin-bottom: var(--spacing-xl);
+}
+
+/* Applicant Info */
+.applicant-info {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding-bottom: var(--spacing-lg);
+    border-bottom: 1px solid var(--gray-100);
+}
+
+.applicant-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.applicant-details h3 {
+    margin-bottom: var(--spacing-xs);
+}
+
+.applicant-details p {
+    color: var(--gray-600);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Status Display */
+.status-display {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-xl);
+    margin: var(--spacing-lg) 0;
+    border-radius: var(--radius-lg);
+}
+
+.status-display.pending {
+    background: rgba(245, 158, 11, 0.1);
+}
+
+.status-display.success {
+    background: rgba(16, 185, 129, 0.1);
+}
+
+.status-display.rejected {
+    background: rgba(107, 114, 128, 0.1);
+}
+
+.status-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.status-display.pending .status-icon {
+    background: var(--status-pending);
+    color: white;
+}
+
+.status-display.success .status-icon {
+    background: var(--status-success);
+    color: white;
+}
+
+.status-display.rejected .status-icon {
+    background: var(--gray-500);
+    color: white;
+}
+
+.status-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.status-label {
+    font-size: 0.875rem;
+    color: var(--gray-600);
+    margin-bottom: var(--spacing-xs);
+}
+
+.status-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.status-display.pending .status-value {
+    color: var(--status-pending);
+}
+
+.status-display.success .status-value {
+    color: var(--status-success);
+}
+
+.status-display.rejected .status-value {
+    color: var(--gray-600);
+}
+
+/* Application Details */
+.application-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg) 0;
+    border-bottom: 1px solid var(--gray-100);
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-label {
+    font-size: 0.75rem;
+    color: var(--gray-500);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--spacing-xs);
+}
+
+.detail-value {
+    font-weight: 600;
+    color: var(--gray-800);
+}
+
+/* Status Message */
+.status-message {
+    padding: var(--spacing-xl);
+    margin: var(--spacing-lg) 0;
+    border-radius: var(--radius-md);
+    background: var(--gray-50);
+}
+
+.status-message h4 {
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.1rem;
+}
+
+.status-message p {
+    color: var(--gray-600);
+    margin-bottom: 0;
+    line-height: 1.7;
+}
+
+.status-message.success {
+    background: rgba(16, 185, 129, 0.1);
+}
+
+.status-message.success h4 {
+    color: var(--status-success);
+}
+
+.status-message.rejected {
+    background: var(--gray-50);
+}
+
+.status-message .signature {
+    margin-top: var(--spacing-md);
+    font-style: italic;
+    color: var(--gray-500);
+}
+
+/* Refresh Button */
+.refresh-btn {
+    width: 100%;
+    margin-top: var(--spacing-md);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .status-card {
+        padding: var(--spacing-lg);
+    }
+
+    .applicant-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .status-display {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .application-details {
+        grid-template-columns: 1fr;
+    }
+}

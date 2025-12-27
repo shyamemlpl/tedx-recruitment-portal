@@ -1,0 +1,97 @@
+.footer {
+    background: var(--tedx-black);
+    color: var(--tedx-white);
+    padding: var(--spacing-3xl) 0 var(--spacing-xl);
+    margin-top: auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: var(--spacing-2xl);
+    margin-bottom: var(--spacing-2xl);
+}
+
+.footer-brand {
+    max-width: 300px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: baseline;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.footer-logo .brand-ted {
+    color: var(--tedx-white);
+}
+
+.footer-logo .brand-x {
+    color: var(--tedx-red);
+    font-size: 1.75rem;
+}
+
+.footer-logo .brand-city {
+    color: var(--gray-400);
+    font-size: 1rem;
+    margin-left: var(--spacing-sm);
+    font-weight: 500;
+}
+
+.footer-tagline {
+    color: var(--gray-400);
+    font-style: italic;
+}
+
+.footer-links {
+    display: flex;
+    gap: var(--spacing-3xl);
+}
+
+.footer-section h4 {
+    color: var(--tedx-white);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--spacing-md);
+}
+
+.footer-section a {
+    display: block;
+    color: var(--gray-400);
+    text-decoration: none;
+    padding: var(--spacing-xs) 0;
+    transition: color var(--transition-fast);
+}
+
+.footer-section a:hover {
+    color: var(--tedx-red);
+}
+
+.footer-bottom {
+    padding-top: var(--spacing-xl);
+    border-top: 1px solid var(--gray-800);
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: var(--gray-500);
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: var(--spacing-xl);
+    }
+}

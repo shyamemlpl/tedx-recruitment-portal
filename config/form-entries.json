@@ -1,0 +1,67 @@
+{
+  "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdMWfO4E1qu7rXLQmoP4OAm8H7fxbwEIQ6JcA5iymrxBdGMrA/formResponse",
+  "instructions": [
+    "Replace each 'entry.REPLACE_WITH_ID' with the actual entry ID from your Google Form",
+    "To find entry IDs: Open your form, inspect any field, look for 'entry.XXXXXXXXXX'",
+    "Or use the browser dev tools Network tab when submitting the form"
+  ],
+  "fields": {
+    "common": {
+      "email": "entry.1026846730",
+      "name": "entry.1717546578",
+      "age": "entry.1388774102",
+      "contact": "entry.840684034",
+      "occupation": "entry.1549407303",
+      "institute": "entry.1781195273",
+      "ahmedabadBased": "entry.1331769159",
+      "linkedin": "entry.381169301",
+      "team": "entry.1429642501",
+      "aboutYou": "entry.1428196788",
+      "verificationToken": "entry.1023342376"
+    },
+    "content": {
+      "jobDescription": "entry.1535673276",
+      "experience": "entry.964487492",
+      "writeReadFreq": "entry.1885360221",
+      "portfolio": "entry.1149567092"
+    },
+    "curation": {
+      "jobDescription": "entry.1790620413",
+      "experience": "entry.468220834",
+      "interactionComfort": "entry.1525834424",
+      "eventFreq": "entry.437451358"
+    },
+    "design": {
+      "jobDescription": "entry.1549612040",
+      "experience": "entry.1753202726",
+      "softwares": "entry.1112293906",
+      "feedback": "entry.313037515",
+      "components": "entry.1844741522"
+    },
+    "operations": {
+      "jobDescription": "entry.661139230",
+      "experience": "entry.1589196483",
+      "emergencyHandling": "entry.286011767"
+    },
+    "marketing": {
+      "jobDescription": "entry.1890877642",
+      "experience": "entry.2028998771",
+      "qualities": "entry.141447402",
+      "techniques": "entry.799854378",
+      "sponsorship": "entry.2038817037"
+    },
+    "production": {
+      "jobDescription": "entry.115644013",
+      "experience": "entry.1290605670",
+      "softwares": "entry.1930009479",
+      "portfolioLink": "entry.584866381",
+      "comfortableLearning": "entry.284700778"
+    },
+    "host": {
+      "jobDescription": "entry.166824347",
+      "experience": "entry.147142827",
+      "aboutYourself": "entry.386957153",
+      "videoApproach": "entry.2135115575"
+    }
+  }
+}
